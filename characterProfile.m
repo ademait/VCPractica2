@@ -17,13 +17,13 @@ for i = 1:row
     for j = 1:col
         if (matrixIm(i,j) > 0)
             if(j < vectorDistRowLeft(1,i))
-                vectorDistRowLeft(1,i) = j;
+                vectorDistRowLeft(1,i) = j - 1;
             end
-            if((col - j) < vectorDistRowLeft(1,i))
-                vectorDistRowLeft(1,i) = (col - j);
+            if((col - j) < vectorDistRowRight(1,i))
+                vectorDistRowRight(1,i) = (col - j);
             end
             if(i < vectorDistColUp(1,j))
-                vectorDistColUp(1,j) = i;
+                vectorDistColUp(1,j) = i - 1;
             end
             if((row - i) < vectorDistColDown(1,j))
                 vectorDistColDown(1,j) = (row - i);
