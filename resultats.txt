@@ -1,0 +1,29 @@
+Resultats:
+
+Num images: 1000
+Descriptors: Hog + dist
+Perc: 95,5
+
+Num images: 1000
+Descriptors: All
+Perc: 95,4
+
+Num images: 100
+Descriptors: Hog + sum
+Perc: 96,1
+
+Num images: 500
+Descriptors: Hog
+Perc: 95,2
+
+Num images: 500
+Descriptors: Hog(PCA) 280/499
+Perc: 94,8
+
+Num images: 500
+Descriptors: All fschi(808) factor 0.26
+Perc: 93,2
+
+Num images: 500
+Descriptors: All
+Perc: 95

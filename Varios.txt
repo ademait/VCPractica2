@@ -1,0 +1,13 @@
+img = images(:,:,2);
+% Extract HOG features and HOG visualization
+[hog_2x2, vis2x2] = extractHOGFeatures(img,'CellSize',[2 2]);
+
+% Show the original image
+figure; 
+subplot(2,2,1:2); imshow(img);
+
+% Visualize the HOG features
+subplot(2,1,2);  
+plot(vis2x2); 
+title({'CellSize = [2 2]'; ['Length = ' num2str(length(hog_2x2))]});
+-----------------------------------
